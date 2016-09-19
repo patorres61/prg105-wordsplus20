@@ -2,16 +2,12 @@
 
 # Define variables
 length = 0
-count = 1
+Less20Cnt = 0
 word20 = 0
 totalWords = 0
 
 # Define input file
 fin = open('words.txt')
-
-# Read input file
-fin.readline()
-totalWords += 1
 
 print ('Words Greater Than 20 characters Omitting Blank Spaces\n')
 # Read file, check character count in each line
@@ -23,8 +19,8 @@ for line in fin:
         print word
         word20 += 1
     else:
-        count += 1
+        Less20Cnt += 1
 
 print ('\nTotal number of words in file: ' + str(totalWords))
 print ('\nTotal words in file greater than 20 characters omitting blank spaces: ' + str(word20))
-print ('\nTotal words in file less than or equal to 20 characters omitting blank spaces: ' + str(count))
+print ('\nTotal words in file less than or equal to 20 characters omitting blank spaces: ' + str(Less20Cnt))
