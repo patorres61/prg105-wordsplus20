@@ -1,4 +1,7 @@
-# This program will read a text file of words and print out any words that have over 20 characters not including white space
+# Phyllis Torres
+# Select Words with more than 20 characters omitting blank spaces
+
+#  This program will read a text file of words and print out any words that have over 20 characters not including white space
 
 # Define variables
 length = 0
